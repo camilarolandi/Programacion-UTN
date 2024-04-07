@@ -16,3 +16,9 @@
   *git add . 
   *git commit -m "comentario"
   *git push
+
+# Para clonar
+*Copiar el codigo de acceso
+*Creo una carpeta
+*Abro la terminal de esa carpeta
+*Pongo git clone, pego el codigo y enter
