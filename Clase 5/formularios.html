@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+<h2> Formulario </h2> 
+<form >
+    <div>
+            <label for="username">Ingresa tu nombre de usuario</label>
+            <!-- Label es la etiqueta: en html no podemos escribir solo el texto FOR: Mismo valor que el ID del imput al que se hace referencia (accesibilidad:ej para personas no videntes) SIEMPRE USAR EL FOR!!!! Si no uso label mi pagina obtiene una puntuacion inferior.  -->
+            <input type="username" name= "username" id="username" placeholder="Camila_r01">
+            <!-- placeholder: texto q se muestra en el input. En que FORMATO se peude escribir ahi, texto?numeros?simbolos? No deberia ser igual a la etiqueta (ejemplo) NO es lo mismo que LABEL ya que LABEL da accesibilidad-->
+        </div>
+        <br>
+        <div>
+            <label for="password">Ingrese su contraseña</label>
+            <input type="password" name= "password" id="password" placeholder="Ab1_Cde3-4">
+        </div>
+        
+    
+    
+</form>
+<!-- action: por ahora no se usa, la vemos en back-end -->
+<!-- etiquetas de entrada de datos. INPUT: type (), name(lo vemos en java), id() -->
+<!-- importante que la informacion este contenida en un formulario: no da estilo. dentro puedo tener todas las etiquetas que quiera -->
+<!-- valores de input mas comunes= texto (mas usado=alfa numerico. name=lo q quiero. id= lo mismo q el nombre -->
+</body>
+</html>
