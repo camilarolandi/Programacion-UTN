@@ -4,8 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
+    <link rel="stylesheet" href="./estilos/estilos.css">
 </head>
 <body>
-    
+        
+    <form>
+            <div>
+                <img src="./Assets/Images/Arbol.jpg" alt="arbol" height="130px">
+                <h1>Trees 4 Good</h1>
+                <label for="firstname">First Name</label>
+                <input type="text" name="firstname" id="firstname">
+            
+                <label for="lastname">Last Name</label>
+                <input type="text" name="lastname" id="lastname">
+
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email">
+
+                <label for="adress">Adress</label>
+                <input type="text" name="adress" id="adress">
+                
+                <label for="city">City</label>
+                <input type="text" name="city" id="city">
+
+                <label for="country">Country</label>
+                <select name="country" id="conutry">
+                    <option value="ar">Argentina</option>
+                    <option value="es">España</option>
+                    <option value="br">Brasil</option>
+                    <option value="usa">Estados Unidos</option>
+                </select>
+                
+                <label for="zip">Zip</label>
+                <input type="text" name="zip" id="zip">
+            
+                <label for="treeloc">Tree Location</label>
+                <Select name="treeloc" id="treeloc">
+                    <option value="A">Zona A</option>
+                    <option value="B">Zona B</option>
+                    <option value="C">Zona C</option>
+                    <option value="D">Zona D</option>
+                </Select>
+                
+            
+                <label for="numtrees">Number of Trees</label>
+                <input type="text" name="numtree" id="numtree">
+            
+                <label for="per">Person/Org Making the purchase</label>
+                <input type="text" name="per" id="per">
+            
+                <label for="purpose">Purpose of the Trees</label>
+                <input type="text" name="purpose" id="purpose">
+            
+                <label for="sub">Subtotal</label>
+                <input type="text" name="sub" id="sub">
+            
+                <label for="tot">Total ($2 per tree + paypals 3,5%) </label>
+                <input type="text" name="tot" id="tot">
+            </div>
+            <span> NOTE: FOR THE DEMO PAYPAL HAS BEN DISABLED ON THIS FORM. PLEASE CLICK
+                THE PAYPAL BUTTON TO CONTINUE TO THE GENERATED PDF</span>
+            <button type="submit">Submit</button>
+            
+    </form>
 </body>
 </html>
