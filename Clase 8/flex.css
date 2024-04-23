@@ -22,6 +22,16 @@ font-family: sans-serif;
     /* column-gap: 50px;/* espacio entre columnas */ 
     gap: 50px; /* propiedad de espaciado entre HIJOS. NO de borde MUY UTILIZADA!!! EN TODAS LAS PAGINAS Y MUCHAS VECES!! SE RESPETA!. Por si solo hacia ambos lados. 2 subtipos: column gap (espacio entre columnas) y row gap.  gap solo toma para ambos la misma distancia: generalmente se usa el gap sin especificar. Normalmente se usa poco row-gap y column gap.*/
     flex-wrap: wrap;/* achico el tamaño de la pantalla se bajan las cajas. cuando no hay espacio, baja: se respeta el tamaño de la caja. Por defecto: no wrap, si quiero que se active wrap. */
+    justify-content:space-around ;/* mover elementos en el eje x start: izquierda, end: derecha. space: between (mas usado: permite espaciar a maximo los elementos se resta 1) combinable con padding. SPACE EVENLY: toma espacio sobrante si no hay espacio restante no se aplica la propiedad. (contabilizo los choques y divido 100 por esos choques: suma =100) otra: space-around (100/cantidad de hijos y ese es el espacio entre cada hijo y a los costados se achica a la mitad el tamaño (mitad de 100/cant hijos)*/
+    /* padding: 0 50px;/* tecnixa muy usada: combino padding con space between */ 
+    align-items:center ;/* ajusta en el eje vertical: center, end, start.*/
+    /* FLEX BOX: Trabaja unidimensional en el eje x o y. Lo defino con la direccion (fex direction). Una cosa es dimension (fila o columna) y otra el eje x a y (eje x se ajusta con justify contents y eje y se ajusta con aling items) PARA FILA */
+    /* TRABAJO EN COLUMNA: SE INVIERTEN LOS EJES(x: vertcal e y horizontal.) SE INVIERTEN LAS PROPIEDADES */
+    
+    /* default: FLEX DIRECTION ROW
+    eje x: justify contents y eje y: aling contents */
+    /* FLEX DIRECTION COLUMN
+    eje x: aling contents y eje y: justify contents */
 
 }
 
