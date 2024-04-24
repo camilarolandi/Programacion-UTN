@@ -9,6 +9,12 @@
 }
 
 
+body{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    flex-wrap: wrap;
+}
 .boxA{
     background-color: chartreuse;
     width: 600px;
@@ -16,11 +22,68 @@
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} 
 
 .box1{
 
     background-color: blueviolet;
+    height: 100px;
+    width: 100px;
+}
+
+
+
+.box2{
+    background-color: rgb(226, 64, 43);
+    height: 100px;
+    width: 100px;
+}
+
+.boxB{
+    background-color: rgb(42, 157, 165);
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 90px;
+}
+
+.boxC{
+    background-color: rgb(255, 151, 246);
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-between;
+    gap:70px;
+    padding:0 10px;
+
+
+}
+
+.boxD{
+    background-color: rgb(248, 252, 47);
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 90px;
+}
+
+.box3{
+    background-color: rgb(214, 129, 0);
+    height: 100px;
+    width: 100px;
+}
+
+
+.box4{
+    background-color: rgb(0, 0, 0);
     height: 100px;
     width: 100px;
 }
