@@ -58,8 +58,8 @@ body{
     flex-direction: row;
     align-items: end;
     justify-content: space-between;
-    gap:70px;
-    padding:0 10px;
+    margin-left: 60px;
+    
 
 
 }
