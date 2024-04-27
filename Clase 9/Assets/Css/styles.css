@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Jacquard+24&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{ /* Normalizacion */
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+/* Trabajar con esa especificidad de clases*/
+
+/* color card style */
+.color-card{ /* caja de colores */
+display: flex;
+flex-direction: column;
+width: 250px;
+gap:15px;
+}
+
+
+.color-card .colors{ /* parte de arriba de la caja */
+display: flex;
+flex-direction: column;
+width: 100%; /* cambia en funcion al cambio en color-card */
+height: 250px;
+background-color: rgb(0, 255, 255);
+border-radius: 15px;
+overflow: hidden; /* para que no se "sobrepase" (rebalsar) el hijo. HIDDEN: todo lo q sobresale del padre se oculta. El que se usa mas es SCROLL. */
+
+/* div es una etiqueta de bloque: caracteristica toma todo el ancho disponible, no hace falta width */
+
+}
+
+.color-card .colors .color:nth-child(1){
+    /* cada uno de los colores */ /* nth-child: llama por orden a cada uno de los hijos con = clase el numero: es el orden. HIJOS DE COLORS!! */
+    height: 40%;/* % busca el alto del padre y toma el 40% */
+    
+
+}
+
+.color-card .colors .color:nth-child(2){
+    height: 30%;
+    
+
+}
+
+.color-card .colors .color:nth-child(3){ 
+    height: 17%;
+
+
+}
+
+.color-card .colors .color:nth-child(4){ 
+    height: 13%;
+    
+    
+
+}
+
+
+.color-card .color-card-controls{ /* parte de abajo de la caja */
+display: flex;
+flex-direction: row; /* viene por default */
+justify-content: space-between;
+align-items: center;
+
+
+}
+
+
+
+.btn-like {
+
+    height: 38px;
+    padding: 0 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.132);
+    border-radius:10px ;
+
+
+}
+
+.color-card .color-card-controls .time{ /* tiempo */
+    color:#000000e6;
+    font-size: 12px;
+
+
+}
+
+/* color card ends */
