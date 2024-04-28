@@ -4,11 +4,11 @@
 
 :root {
     --ff-primary: "DM Sans", sans-serif; ;
-    --fs-historia: 14px;
-    --fs-link: 16px;
+    --fs-historia: 16px;
+    --fs-link: 18px;
     --link-color: #673de6;
     --fs-nom:18px;
-    --fs-prof: 14px;
+    --fs-prof: 15px;
     --prof-color: #2F1C6A;
     --color-texto-nav :#3A3C3B; 
     --color-historia: #2f1c6a;
@@ -120,6 +120,7 @@ nav .links-container .link-item .btn{
 }
 
 
+
 .controls .control-btn{
     display: flex;
     justify-content: center;
@@ -130,7 +131,7 @@ nav .links-container .link-item .btn{
     
 .btn-vermas{
     color: var(--link-color);
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     padding: 12px 48px;
     border-radius: 5px;
@@ -152,6 +153,7 @@ h2{
 .opinion{
 display: flex;
 flex-direction: column;
+border: 1px solid rgb(213,223,255);
 
 
 }
@@ -160,12 +162,10 @@ flex-direction: column;
 display: flex;
 flex-direction: column;
 padding: 48px 32px;
-width: 321px;
+width: 350px;
 height: 349px;
-border: 1px solid rgb(213,223,255);
 background-color: rgb(255,255,255);
-overflow: hidden;
-border-radius: 5px;
+
 
 
 
@@ -187,7 +187,7 @@ padding: 5px;
 
 
 .opinion .opinion-sup .historia {
-    width: 249px;
+    width: 300px;
     height: 186px;
     font-size: var(--fs-historia);
     padding: 18px 0 0;
@@ -208,15 +208,13 @@ padding: 5px;
 
 .opinion .opinion-inf{
 
-    width: 321px;
+    width: 350px;
     height: 113PX;
-    border:  1px solid rgb(213,223,255);
+    border-top:  1px solid rgb(213,223,255);
     padding: 24px 32px;
     background-color: rgb(244,245,255);
     display: flex;
     flex-direction: row;
-    border-radius: 5px;
-    overflow: hidden;
 
 }
 
