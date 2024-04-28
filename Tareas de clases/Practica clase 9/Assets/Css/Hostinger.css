@@ -22,21 +22,37 @@
     font-family: var(--ff-primary);
 }
 
-body{ 
-    font-size: 100%;
 
 
-}
+
 .opiniones{
     display: flex;
     flex-direction: row;
     gap: 20px;
-    padding: 0 40px;
+    padding: 0 0 48px;
     justify-content: center;
-
 
 }
 
+
+.controls .control-btn{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    }
+    
+
+    
+.btn-vermas{
+    color: var(--link-color);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 48px;
+    border-radius: 5px;
+    border: 2px solid var(--link-color);
+    background-color: #ffffff;
+    
+    }
 
 h2{
     color: rgb(81,28,106);
@@ -60,17 +76,17 @@ flex-direction: column;
 padding: 48px 32px;
 width: 321px;
 height: 349px;
-border: 2px solid rgb(213,223,255);
+border: 1px solid rgb(213,223,255);
 background-color: rgb(255,255,255);
 overflow: hidden;
-border-radius: 0  6px;
+border-radius: 5px;
 
 
 
 }
 
 .opinion .opinion-sup .estrellas{
-padding: 0 6px 0 0;
+padding: 5px;
 
 }
 
@@ -106,12 +122,12 @@ padding: 0 6px 0 0;
 .opinion .opinion-inf{
 
     width: 321px;
-    border: 2px solid rgb(213,223,255);
+    border:  1px solid rgb(213,223,255);
     padding: 24px 32px;
     background-color: rgb(244,245,255);
     display: flex;
     flex-direction: row;
-    border-radius: 0 0 6px 6px;
+    border-radius: 5px;
     overflow: hidden;
 
 
@@ -166,14 +182,4 @@ font-size: var(--fs-prof);
 
 
 
-
-.btn-vermas{
-color: var(--link-color);
-font-size: 16px;
-font-weight: bold;
-display: flex;
-justify-content: center;
-
-
-}
 
