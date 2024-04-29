@@ -185,10 +185,12 @@ padding: 5px;
 
 .opinion .opinion-sup .historia {
     width: 300px;
-    height: 186px;
+    height: 200px;
     font-size: var(--fs-historia);
     padding: 18px 0 0;
     color: var(--color-historia);
+    line-height: 25px;
+
 
 
 }
