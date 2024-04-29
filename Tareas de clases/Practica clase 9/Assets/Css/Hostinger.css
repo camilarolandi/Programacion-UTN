@@ -4,7 +4,7 @@
 
 :root {
     --ff-primary: "DM Sans", sans-serif; ;
-    --fs-historia: 16px;
+    --fs-historia: 14px;
     --fs-link: 18px;
     --link-color: #673de6;
     --fs-nom:18px;
@@ -152,13 +152,14 @@ flex-direction: column;
 border: 1px solid rgb(213,223,255);
 
 
+
 }
 
 .opinion .opinion-sup{
 display: flex;
 flex-direction: column;
 padding: 48px 32px;
-width: 350px;
+width: 360px;
 height: 349px;
 background-color: rgb(255,255,255);
 
@@ -204,7 +205,7 @@ padding: 5px;
 
 .opinion .opinion-inf{
 
-    width: 350px;
+    width: 360px;
     height: 113PX;
     border-top:  1px solid rgb(213,223,255);
     padding: 24px 32px;
