@@ -1,0 +1,30 @@
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding:20px
+}
+
+
+@media screen and (min-width:850px)
+{
+
+    nav{
+        display: flex;
+        gap: 15px;
+
+    }
+
+    header.button{
+        display: none;
+    }
+}
