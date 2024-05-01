@@ -8,9 +8,11 @@
     box-sizing: border-box;
 
 }
+
+
  /* en el celu trabajamos con medidas relativas con % */
 .padre{
-    width: 100%; /* le doy 100% del tamaño del padre (body)*/
+    width: 100vw; /* le doy 100% del tamaño del padre (body)*/
     /*  height vh es un problema para el celu: trato de evitarlo, es mejor q el contenido del padre defina el tamaño del contenedor*/
     color:white;
     background-color:blueviolet;
@@ -19,9 +21,10 @@
     gap:30px;
     padding: 20px; /* padding limitante del padre */
     align-items: center;
+    
 }
 
-.padre .hijo{
+.hijo{
 background-color: azure;
 width: 100%; 
 /* hijo con ancho determinado: problema si empiezo a achicar la pagina: se comienza a romper 280px buen ancho para comenzar. para celu uso % (100% del tamaño del padre)*/
@@ -30,25 +33,25 @@ border-radius: 15px;
 border: 2px solid black;
 max-width: 500px; /* el elemento no puede crecer mas de ese valor. Limitante*/
 
-
 }
 
 
 
-
-
-@media screen and (min-width: 800px) { /* cuando la pantalla tenga 1000px la pantalla tiene flex direction row. Tengo q poner solo la modificacion que quiero hacer. especificidad del media query igual o mejor q la use antes, la media query SIEMPRE ABAJO!! xq se aplica primero eso y luego lo otro xq tiene cascada y siempre del valor mas bajo al mas alto si quiero uno de 800 por ejemplo lo pongo arriba del 1000. importa orden en el css, especificidad y orden media query MEDIA QUERY ES UNA HERRAMIENTA DE CSS PARA HACER MOBILE FIRST*/
+@media screen and (min-width: 800px) { /* cuando la pantalla tenga 800px la pantalla tiene flex direction row. Tengo q poner solo la modificacion que quiero hacer. especificidad del media query igual o mejor q la use antes, la media query SIEMPRE ABAJO!! xq se aplica primero eso y luego lo otro xq tiene cascada y siempre del valor mas bajo al mas alto si quiero uno de 700 por ejemplo lo pongo arriba del 800. importa orden en el css, especificidad y orden media query MEDIA QUERY ES UNA HERRAMIENTA DE CSS PARA HACER MOBILE FIRST*/
     .padre{
         flex-direction: row; /* se mantiene todo el resto: el background color, width, ... seria redundante poner display: flex no es necesario porq ya lo tiene el padre */
     }
     .hijo{
         background-color: brown;
     }
-}
+} 
+
 
 @media sccreen and (min-width:900px){
     .padre{
         flex-direction: row;
-    }
+    } 
 }
 /* desktop first de abajo hacia arriba */
+
+
