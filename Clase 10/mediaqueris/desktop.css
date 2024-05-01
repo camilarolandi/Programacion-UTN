@@ -30,10 +30,14 @@ header h2{
 nav{
     display: flex;
     gap: 15px;
+
     } 
     
 .link{
     font-size: 1.2rem; /* dar rem a todas las fuentes */
+    list-style-type: none;
+    text-decoration: none;
+    color:black;
 
 }
 
@@ -53,6 +57,7 @@ header .button {
 
     header .button {
         display: flex;
+        width: 20px;
     }
     nav{
         display: none;
