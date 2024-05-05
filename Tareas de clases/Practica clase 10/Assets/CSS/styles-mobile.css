@@ -40,17 +40,9 @@
     flex-direction: column;
     width: 100%;
     max-width: var(--max-width); 
-    border: 1px solid black;
 
     
 }
-
-/* .foto-texto-opiniones .foto-texto .cont-foto{
-    width: 100%;
-    padding: 5px;
-    /* display: flex;
-    flex-direction: row;
-    align-items: center; */
 
 
 .foto-texto-opiniones .foto-texto .chica-foto{ /* foto de la chica */
@@ -115,7 +107,6 @@ h2{ /* titulo */
     width: 100%;
     max-width: var(--max-width);
     align-items: center;
-    border: 1px solid black;
 
 
 }
@@ -191,7 +182,7 @@ h2{ /* titulo */
         justify-content: space-between;
         max-width: none;
         padding: 30px;
-        background-color: blue;
+        
     }
 
     .foto-texto-opiniones .foto-texto .chica-foto{
