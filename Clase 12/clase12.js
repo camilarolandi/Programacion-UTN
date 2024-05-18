@@ -85,9 +85,10 @@ let nombre = "pepe" (variable global)
 
 CONST
 Valor constante.
-tiene hoisting?
+tiene hoisting? NO
 se puede reasignar? NO
-valor implicito en undefined?
+se puede redeclarar? si pero en distitnos bloques
+valor implicito en undefined? NO 
 Se puede redeclarar
 
 */
