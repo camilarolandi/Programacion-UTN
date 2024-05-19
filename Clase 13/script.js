@@ -108,7 +108,7 @@ if(puntos>= 0 && puntos<=1000){
 
 /* let salario = prompt ("Ingrese su salario mensual")
 salario= Number(salario)
-alert ("Su salario anual es: " + salario * 12 ) */
+alert ("Su salario anual es: $ " + salario * 12 ) */
 
 /* HIJOS */
 
@@ -116,11 +116,53 @@ alert ("Su salario anual es: " + salario * 12 ) */
 
 /* EDAD  */
 
-let edad = prompt ("Ingrese su edad")
+/*let edad = prompt ("Ingrese su edad")
 
 if (edad >= 18){
   console.log ("Eres mayor de edad")
+
 }
 else{
   alert("Eres menor de edad")
+} */
+
+/* HIJOS */
+
+/* let tienehijos= prompt("¿Tiene hijos?")
+
+  if (tienehijos ==="Si"){
+    alert("True")
+  }
+    else{
+    alert("False")} */
+  
+
+
+
+/* Sueldo y antiguedad */
+
+/* let sueldo = prompt ("Ingrese su salario")
+if (!sueldo){
+console.error ("No es valido")
+
 }
+let antiguedad = prompt ("Ingrese su antiguedad")
+
+Number(sueldo)
+if(sueldo<500 && antiguedad>=10){
+  alert("Corresponde un aumento del 20%")
+  alert("Su salario total es: $ " + sueldo* 1.20)
+}
+else if (sueldo < 500 && antiguedad<10){
+  alert("Corresponde un aumento del 5%")
+  alert("Su salario total es: $ " + sueldo* 1.05)
+}
+else if (sueldo >= 500){
+  
+  alert("Su salario es: " + sueldo)
+}
+ */
+
+/* HIJOS= CORRECTO */
+/* let tienehijos= true
+alert(tienehijos) */
