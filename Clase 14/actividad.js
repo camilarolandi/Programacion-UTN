@@ -7,18 +7,19 @@
 
 
 
-    let lista = ""
+    let listado = ""
     let cantalumn =prompt("Ingrese la cantidad de alumnos")
         while  (!cantalumn || isNaN(cantalumn)){
-            cantalumn= prompt("Debe ingresar la cantidad de alumnos")
+            cantalumn= prompt("ERROR : Debe ingresar la cantidad de alumnos")
         }
         cantalumn= Number(cantalumn)
     for (i=1; i <= cantalumn; i = i + 1){
+        
         let nombres= prompt ("Ingrese el nombre de los alumnos")
-        while  (!isNaN(nombres)){
-            nombres= prompt("Debe ingresar un nombre")
-        }
-    lista = lista + "- " + nombres + "\n"
+        
+        listado = listado + "- " + nombres + "\n"
     }
     
-alert("Los nombres ingresados son: \n" + lista)
+alert("Listado de alumnos: \n" + listado) 
+
+
