@@ -181,7 +181,6 @@ mayusculaMinuscula()
 let palabra = prompt("Ingrese una palabra")
 
 function tieneMayusculaMinuscula (palabra){
-
 const abc = /[A-Z]/
 const mayuscMinusc = abc.test(palabra)
 if(mayuscMinusc){
