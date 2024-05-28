@@ -122,7 +122,7 @@ return console.log ("El mensaje NO es complejo")
 }
 complejo()  */
 
-let texto = prompt("Ingrese texto")
+/* let texto = prompt("Ingrese texto")
 let textoDescifrado =(texto.replaceAll("%20", " ")) 
 
 
@@ -150,7 +150,7 @@ else{
 
 }
 cantCaract()
-
+ */
 
 
 
@@ -172,8 +172,27 @@ function mayusculaMinuscula(){
     return console.log ("el texto no tiene minusculas")
         }
     
-
+mayusculaMinuscula()
  */
+
+
+
+
+let palabra = prompt("Ingrese una palabra")
+
+function tieneMayusculaMinuscula (palabra){
+
+const abc = /[A-Z]/
+const mayuscMinusc = abc.test(palabra)
+if(mayuscMinusc){
+    console.log("Tiene mayuscula")
+}
+else{
+    console.log("Tiene minuscula")
+}
+
+}
+tieneMayusculaMinuscula(palabra)
 
 
 /*  15:18
