@@ -1,15 +1,14 @@
 
-/* Validaciones */
 function validarEmail(){
     return (/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/).test(email)
 }
 
 function validarPassword(){
-    return (Boolean(password) && password.length >= 6 && /[A-Z]/.test(password))
+    return (Boolean(password) && password.length > 6 && password != password.toLowerCase())
 }
 
 
-/* CallBack */
+
 function obtenerDato(data){
 let dato = prompt (data.mensaje)
 while (!data.validacion(dato)){
@@ -21,17 +20,17 @@ return dato
 }
 
 
-const datos ={
+const DATOS ={
 
-    email :{
+EMAIL :{
         mensaje: "Ingrese su e-mail" ,
         error: "ERROR: No se ingreso un e-mail valido, reintente",
         validacion: validarEmail
     },
 
-    password:{
+    PASSWORD:{
         mensaje: "Ingrese su contraseña" ,
-        error: "ERROR: No se ingreso una contraseña reintente",
+        error: "ERROR: No se ingreso una contraseña valida, reintente",
         validacion: validarPassword
     }
 }
@@ -39,21 +38,12 @@ const datos ={
 
 
 function login(){
-    let email=obtenerDato(datos.email)
-    let password=  obtenerDato(datos.password)
-    return {email: email, password:password}
+    let email = obtenerDato(DATOS.EMAIL)
+    let password = obtenerDato(DATOS.PASSWORD)
+    return {email: email, password: password}
 }
 
 
+login()
 
 
-
-
-
-
-
-/* function login() {
-    let email = obtenerDato(DATOS.EMAIL)
-    let password = obtenerDato(DATOS.PASSWORD)
-    return { email: email, password: password}
-} */
